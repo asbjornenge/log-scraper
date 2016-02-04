@@ -6,8 +6,7 @@
   "scripts": {
     "test": "mocha -w --compilers js:babel-register -R nyan",
     "preversion": "babel index.js > lib.js",
-    "postversion": "npm publish",
-    "postpublish": "git push && git push --tags"
+    "postversion": "git push && git push --tags && npm publish"
   },
   "author": "",
   "license": "ISC",
