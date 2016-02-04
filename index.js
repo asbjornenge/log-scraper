@@ -56,7 +56,7 @@ function findTimeStamp(line) {
 }
 
 function createRequestUri(uri, since) {
-    return `http://${uri}/logs?stdout=1&stderr=1&timestamps=1&since=${since}`
+    return `${uri}?stdout=1&stderr=1&timestamps=1&since=${since}`
 }
 
 function createScrapers(config, services) {

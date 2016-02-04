@@ -1,10 +1,10 @@
 [
         {
             "name" : "taghub.mango.api.api-1",
-            "uri"  : "taghub-mango-api-1:4243/containers/mango-api-1"
+            "uri"  : "http://taghub-mango-api-1:4243/containers/mango-api-1/logs"
         },
         {
             "name" : "taghub.mango.worker.service-updater-1",
-            "uri"  : "taghub-mango-workers-1:4243/containers/service-updater"
+            "uri"  : "http://taghub-mango-workers-1:4243/containers/service-updater/logs"
         }
 ]

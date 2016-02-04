@@ -7,12 +7,12 @@ import services           from './services.json'
 // Nock
 
 let _date = "2016-01-18T13:33:06.517910479Z"
-let _log  = `�${_date} [pid: 58|app: 0|req: 478/1599] 127.0.0.1 () {40 vars in 604 bytes} [Mon Jan 18 14:33:06 2016] GET /login/?next=/index/ => generated 7339 bytes in 8 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)`
+let _log  = `${_date} [pid: 58|app: 0|req: 478/1599] 127.0.0.1 () {40 vars in 604 bytes} [Mon Jan 18 14:33:06 2016] GET /login/?next=/index/ => generated 7339 bytes in 8 msecs (HTTP/1.0 200) 1 headers in 59 bytes (1 switches on core 0)`
 
 services.forEach(service => {
     let base = service.uri.split('/')
-    nock(new RegExp(base[0]))
-        .get(new RegExp(`/${base[1]}/${base[2]}/logs`))
+    nock(new RegExp(base[2]))
+        .get(new RegExp(`/${base[3]}/${base[4]}/logs`))
         .reply(200, _log)
 })
 
