@@ -32,6 +32,10 @@ scrapers.forEach(s => s.start())
 
 ## Changelog
 
+### 1.0.1
+
+* Added a build
+
 ### 1.0.0
 
 * Initial release :tada:

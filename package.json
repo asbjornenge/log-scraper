@@ -2,9 +2,11 @@
   "name": "@asbjornenge/log-scraper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib.js",
   "scripts": {
-    "test": "mocha -w --compilers js:babel-register -R nyan"
+    "test": "mocha -w --compilers js:babel-register -R nyan",
+    "preversion": "babel index.js > lib.js",
+    "postversion": "git push --tags && npm publish"
   },
   "author": "",
   "license": "ISC",
