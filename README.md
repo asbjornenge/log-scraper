@@ -2,7 +2,7 @@
 
 Tiny little log scraper.
 
-It follows the [docker logs API](https://docs.docker.com/engine/reference/api/docker_remote_api_v1.19/#get-container-logs) and assumes you want both `stdout` and `stderr` and `timestamps` for your logs. It uses the `since` parameter to avoid scraping the same logs twice.
+It follows the [docker logs API](https://docs.docker.com/engine/reference/api/docker_remote_api_v1.19/#get-container-logs) and assumes you want both `stdout` and `stderr` and `timestamps`. It uses the `since` parameter to avoid scraping the same logs twice.
 
 ## Install
 
